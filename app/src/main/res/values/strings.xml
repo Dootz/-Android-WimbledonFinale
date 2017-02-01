@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Wimbledon: final</string>
+    <string name="challenge_BT">Challenge</string>
+    <string name="player1">Nadal</string>
+    <string name="player2">Federer</string>
+    <string name="points_BT">Point</string>
+    <string name="points1">0</string>
+    <string name="points2">0</string>
+    <string name="player1Text">Player 1</string>
+    <string name="player2Text">Player 2</string>
+    <string name="winner"></string>
+    <string name="reset">Reset</string>
+</resources>
