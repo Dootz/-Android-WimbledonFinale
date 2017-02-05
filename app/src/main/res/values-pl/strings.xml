@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Wimbledon: finał</string>
+    <string name="ace">As!</string>
+    <string name="aceText">Asy: </string>
+    <string name="challenge_BT"></string>
+    <string name="player1Text">Gracz 1</string>
+    <string name="player2Text">Gracz 2</string>
+    <string name="points_BT">Punkt</string>
+</resources>

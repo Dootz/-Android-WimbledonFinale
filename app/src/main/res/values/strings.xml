@@ -10,4 +10,6 @@
     <string name="player2Text">Player 2</string>
     <string name="winner"></string>
     <string name="reset">Reset</string>
+    <string name="ace">Ace!</string>
+    <string name="aceText">Aces: </string>
 </resources>
