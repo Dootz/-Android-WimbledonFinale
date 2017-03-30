@@ -12,7 +12,6 @@ import static com.example.android.wimbledonfinal.R.string.player1;
 import static com.example.android.wimbledonfinal.R.string.player2;
 
 public class MainActivity extends AppCompatActivity {
-
     int player1Score = 0;
     int player2Score = 0;
     static int points30 = 30;
@@ -28,9 +27,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_main);
-
     }
 
     @Override
@@ -39,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
         savedInstanceState.putInt(STATE_SCORE_2, player2Score);
         savedInstanceState.putInt(STATE_ACE_1, player1Ace);
         savedInstanceState.putInt(STATE_ACE_2, player2Ace);
-
 // Always call the superclass so it can save the view hierarchy state
         super.onSaveInstanceState(savedInstanceState);
     }
@@ -47,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
     public void onRestoreInstanceState(Bundle savedInstanceState) {
         // Always call the superclass so it can restore the view hierarchy
         super.onRestoreInstanceState(savedInstanceState);
-
         player1Score = savedInstanceState.getInt(STATE_SCORE_1);
         player2Score = savedInstanceState.getInt(STATE_SCORE_2);
         player1Ace = savedInstanceState.getInt(STATE_ACE_1);
