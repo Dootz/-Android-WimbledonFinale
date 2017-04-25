@@ -7,4 +7,6 @@
     <string name="player1Text">Gracz 1</string>
     <string name="player2Text">Gracz 2</string>
     <string name="points_BT">Punkt</string>
+    <string name="winnerPlayer1">"Zwyciężył Gracz 1"</string>
+    <string name="winnerPlayer2">"Zwyciężył Gracz 2"</string>
 </resources>

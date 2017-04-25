@@ -136,7 +136,7 @@
         android:src="@drawable/court" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/resetButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="resetScore"
@@ -146,7 +146,7 @@
         android:layout_toStartOf="@+id/image" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/winnerNameTextView"
         style="@style/Name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

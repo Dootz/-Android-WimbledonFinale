@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import static android.R.attr.handle;
@@ -12,17 +13,17 @@ import static com.example.android.wimbledonfinal.R.string.player1;
 import static com.example.android.wimbledonfinal.R.string.player2;
 
 public class MainActivity extends AppCompatActivity {
-    int player1Score = 0;
-    int player2Score = 0;
-    static int points30 = 30;
-    static int points40 = 40;
-    static int pointsAdvantage = 45;
-    int player1Ace = 0;
-    int player2Ace = 0;
-    static final String STATE_SCORE_1 = "player1Score";
-    static final String STATE_SCORE_2 = "player2Score";
-    static final String STATE_ACE_1 = "player1Ace";
-    static final String STATE_ACE_2 = "player2Ace";
+    private int player1Score = 0;
+    private int player2Score = 0;
+    private static int points30 = 30;
+    private static int points40 = 40;
+    private static int pointsAdvantage = 45;
+    private int player1Ace = 0;
+    private int player2Ace = 0;
+    private static final String STATE_SCORE_1 = "player1Score";
+    private static final String STATE_SCORE_2 = "player2Score";
+    private static final String STATE_ACE_1 = "player1Ace";
+    private static final String STATE_ACE_2 = "player2Ace";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
             player2Score = points40;
             updateScore();
         } else if (player2Score == points40 && player1Score < points40)
-            announceWinner("Winner: Player 2");
+            announceWinner(getString(R.string.winnerPlayer1));
         else if (player2Score == points30 && player1Score == points40) {
             deuce();
             player2Score = points40;
@@ -86,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
             advantage(2);
             player2Score += 5;
         } else if (player2Score == pointsAdvantage && player1Score == points40) {
-            announceWinner("Winner: Player 2");
+            announceWinner(getString(R.string.winnerPlayer2));
         } else if (player2Score == points40 && player1Score == pointsAdvantage) {
             deuce();
             player1Score -= 5;
@@ -108,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void announceWinner(String playerName) {
-        TextView winnerTextView = (TextView) findViewById(R.id.textView);
+        TextView winnerTextView = (TextView) findViewById(R.id.winnerNameTextView);
         winnerTextView.setText(playerName);
     }
 

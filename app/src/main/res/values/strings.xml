@@ -12,4 +12,6 @@
     <string name="reset">Reset</string>
     <string name="ace">Ace!</string>
     <string name="aceText">Aces: </string>
+    <string name="winnerPlayer1">"Winner: Player 1"</string>
+    <string name="winnerPlayer2">"Winner: Player 2"</string>
 </resources>
